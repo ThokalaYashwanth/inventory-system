@@ -1,7 +1,6 @@
 import axios from 'axios'
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000'
-
+const API_URL = 'https://inventory-backend-5eep.onrender.com'
 const api = axios.create({ baseURL: API_URL })
 
 export const getProducts = () => api.get('/products')
